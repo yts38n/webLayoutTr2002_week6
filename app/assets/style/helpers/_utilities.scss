@@ -1,0 +1,149 @@
+.align-sub {
+    vertical-align: sub;
+}
+
+.border-gray-100 {
+    border-color: $gray-100;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+}
+
+.card {
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover {
+        border-color: $primary;
+
+        .material-icons {
+            @extend .gradient-text;
+        }
+    }
+
+    .card-img-top {
+        width: 100px;
+    }
+}
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.flow-num {
+    @extend .font-Azeret;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 56px;
+    position: absolute;
+    left: 12%;
+    padding: 0 0.5rem;
+    background-color: $gray-500;
+}
+
+.decoration {
+    width: 50px;
+    height: 3px;
+    background: $white;
+}
+
+.font-Azeret {
+    font-family: 'Azeret Mono', monospace;
+}
+
+.gradient-border {
+    border-image: linear-gradient(90deg, $primary 50%, $secondary 50%) 1;
+}
+
+.gradient-text {
+    background-image: linear-gradient(180deg, $primary, $secondary);
+    background-clip: text;
+    color: transparent;
+}
+
+.rounded {
+    &-8 {
+        @include border-radius(8px, 'false');
+    }
+
+    &-12 {
+        @include border-radius(12px, 'false');
+    }
+
+    &-24 {
+        @include border-radius(24px, 'false');
+    }
+
+    &-32 {
+        @include border-radius(32px, 'false');
+    }
+}
+
+.squareRounded {
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    &-tl {
+        border-top: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-top-left-radius: 10px;
+    }
+
+    &-tr {
+        border-top: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-top-right-radius: 10px;
+    }
+
+    &-bl {
+        border-bottom: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-bottom-left-radius: 10px;
+    }
+
+    &-br {
+        border-bottom: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.shift {
+    &-start {
+        &-4 {
+            @include media-breakpoint-up(lg) {
+                margin-left: -($spacer * 1.5);
+            }
+        }
+
+        &-6 {
+            @include media-breakpoint-up(lg) {
+                margin-left: -($spacer * 3);
+            }
+        }
+    }
+
+    &-bottom {
+        &-6 {
+            @include media-breakpoint-up(lg) {
+                margin-bottom: -($spacer * 3);
+            }
+        }
+    }
+}
+
+.swiper-wrapper {
+    .swiper-slide {
+        border: 1px solid $white;
+    }
+    .active{
+        color: $primary;
+        border-color: $primary;
+    }
+}

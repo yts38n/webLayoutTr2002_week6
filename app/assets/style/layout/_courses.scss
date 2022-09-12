@@ -1,0 +1,8 @@
+.course{
+    .btn{
+        width: 140px;
+        @include media-breakpoint-up(lg){
+            width: 168px;
+        }
+    }
+}
