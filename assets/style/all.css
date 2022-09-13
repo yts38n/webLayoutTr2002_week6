@@ -14821,6 +14821,11 @@ body {
   border: 1px solid #fff;
 }
 
+.swiper-wrapper .swiper-slide:hover {
+  color: #62DB54;
+  border-color: #62DB54;
+}
+
 .swiper-wrapper .active {
   color: #62DB54;
   border-color: #62DB54;
