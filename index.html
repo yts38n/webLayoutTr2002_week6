@@ -1,10 +1,47 @@
----
-title: 程式家教
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>程式家教</title>
+	<link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md border-bottom border-2 gradient-border sticky-top bg-dark">
+    <div class="container d-flex py-3 align-items-center">
+        <a href="index.html">
+            <img src="../assets/images/logo.svg" alt="logo-md" class="logo d-none d-md-block">
+            <img src="../assets/images/logo2.svg" alt="logo-sm" class="logo d-block d-md-none">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons text-primary">drag_handle</span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-3 mt-md-0" id="navbarCollapse">
+            <ul class="list-unstyled navbar-nav mb-0">
+                <li class="me-6 mb-2 mb-md-0">
+                    <a href="index.html">首頁</a>
+                </li>
+                <li class="me-6 mb-2 mb-md-0">
+                    <a href="courses.html">課程介紹</a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center">
+                        <span class="material-icons me-1">account_circle</span>
+                        登入
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+	<main>
+		
 <section class="container header d-flex align-items-center justify-content-center">
 	<div class="px-4 py-5 p-lg-6 border border-white bg-light text-center position-relative">
 		<p class="fs-4 fs-lg-1 mx-lg-5 mb-4 fw-bold">
@@ -462,4 +499,15 @@ current: index
 			</div>
 		</div>
 	</div>
-</section>
+</section>		
+	</main>
+
+	<footer class="copyright text-center py-3 py-lg-4">
+    <p class="font-Azeret fs-10 fs-lg-8 mb-0">Coding Home © 2022 All Rights Reserved</p>
+</footer>
+
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
