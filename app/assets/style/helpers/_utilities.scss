@@ -141,8 +141,14 @@
 .swiper-wrapper {
     .swiper-slide {
         border: 1px solid $white;
+
+        &:hover {
+            color: $primary;
+            border-color: $primary;
+        }
     }
-    .active{
+
+    .active {
         color: $primary;
         border-color: $primary;
     }
